@@ -1,0 +1,94 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-10-16 23:21+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: tr_TR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+#: .\templates\layout.html:71 .\templates\project.html:30
+msgid "Home"
+msgstr "Anasayfa"
+
+#: .\templates\layout.html:72
+msgid "About"
+msgstr "Hakkımda"
+
+#: .\templates\layout.html:73
+msgid "Experience"
+msgstr "Deneyim"
+
+#: .\templates\layout.html:74 .\templates\layout.html:211
+msgid "Portfolio"
+msgstr "Portfolyo"
+
+#: .\templates\layout.html:75
+msgid "Contact"
+msgstr "İletişim"
+
+#: .\templates\layout.html:78
+msgid "Language"
+msgstr "Dil"
+
+#: .\templates\layout.html:106 .\templates\layout.html:242
+msgid "Design"
+msgstr "Tasarla"
+
+#: .\templates\layout.html:106 .\templates\layout.html:242
+msgid "Code"
+msgstr "Kodla"
+
+#: .\templates\layout.html:106 .\templates\layout.html:242
+msgid "Build"
+msgstr "İnşa Et"
+
+#: .\templates\layout.html:149
+msgid "About Me"
+msgstr "Hakkımda"
+
+#: .\templates\layout.html:165
+msgid "My Skills"
+msgstr "Yetenekler"
+
+#: .\templates\layout.html:227
+msgid "Read More"
+msgstr "Devamı"
+
+#: .\templates\layout.html:253
+msgid "Contact Me"
+msgstr "İletişim"
+
+#: .\templates\layout.html:257
+msgid "Your Name"
+msgstr "İsminiz"
+
+#: .\templates\layout.html:260
+msgid "Your Email"
+msgstr "Email"
+
+#: .\templates\layout.html:263
+msgid "Your Message"
+msgstr "Mesajınız"
+
+#: .\templates\layout.html:266
+msgid "Send"
+msgstr "Gönder"
+
+#: .\templates\layout.html:273
+msgid "Location"
+msgstr "Lokasyon"
+
+#: .\templates\layout.html:277
+msgid "Phone"
+msgstr "Telefon"

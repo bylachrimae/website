@@ -1,0 +1,153 @@
+{% extends "layout.html" %}
+{% load static %}
+{% load i18n %}
+
+{% block navbar %}
+    <header class="header navbar-fixed-top">
+        <!-- Navbar -->
+        <nav class="navbar" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="menu-container js_nav-item">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="toggle-icon"></span>
+                    </button>
+
+                    <!-- Logo -->
+                    <div class="logo" >
+                        <a class="logo-wrap" href="{% url 'index'%}">
+                            ByLachrimae
+                        </a>
+                    </div>
+                    <!-- End Logo -->
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse nav-collapse">
+                    <div class="menu-container">
+                        <ul class="nav navbar-nav navbar-nav-right">
+                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="{% url 'index'%}">{% trans "Home" %}</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End Navbar Collapse -->
+            </div>
+        </nav>
+        <!-- Navbar -->
+    </header>
+{% endblock navbar %}
+
+{% block content %}
+<div id="project" class="container content-lg" style="margin-top: 100px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 sm-margin-b-60">
+                <!-- Image with a link to open the popup -->
+                {% if project.image.url %}
+                    <div class="image-box">
+                        <a href="{{project.image.url}}" class="shadowed-image">
+                            <img class="shadowed-image" style="height: 200px;width: 300px;object-fit: contain;" src="{{project.image.url}}" alt="Project image">
+                        </a>
+                    </div>
+                {% else %}
+                {% endif %}
+                {% if project.image2.url %}
+                    <div class="image-box" style="margin-top: 20px;">
+                        <a href="{{project.image2.url}}" class="shadowed-image">
+                            <img class="shadowed-image" style="height: 200px;width: 300px;object-fit: contain;" src="{{project.image2.url}}" alt="Project image">
+                        </a>
+                    </div>
+                {% else %}
+                {% endif %}
+                {% if project.image3.url %}
+                    <div class="image-box" style="margin-top: 20px;">
+                        <a href="{{project.image3.url}}" class="shadowed-image">
+                            <img class="shadowed-image" style="height: 200px;width: 300px;object-fit: contain;" src="{{project.image3.url}}" alt="Project image">
+                        </a>
+                    </div>
+                {% else %}
+                {% endif %}
+                {% if project.image4.url %}
+                    <div class="image-box" style="margin-top: 20px;">
+                        <a href="{{project.image4.url}}" class="shadowed-image">
+                            <img class="shadowed-image" style="height: 200px;width: 300px;object-fit: contain;" src="{{project.image4.url}}" alt="Project image">
+                        </a>
+                    </div>
+                {% else %}
+                {% endif %}
+                {% if project.image5.url %}
+                    <div class="image-box" style="margin-top: 20px;">
+                        <a href="{{project.image5.url}}" class="shadowed-image">
+                            <img class="shadowed-image" style="height: 200px;width: 300px;object-fit: contain;" src="{{project.image5.url}}" alt="Project image">
+                        </a>
+                    </div>
+                {% else %}
+                {% endif %}  
+            </div>
+            <div class="col-sm-6 sm-margin-b-60">
+                {% if current_language == 'en' %}
+                    <h1>{{project.title}}</h1>
+                    <div class="category-box" style="margin-bottom: 50px;">
+                        <span>{{ project.category }}</span>
+                    </div>
+                    <div style="max-width: 100%;white-space: pre-wrap; word-wrap: break-word; margin-bottom:50px">
+                        <p>{{project.project_content}}</p>
+                    </div>
+                    <div>
+                        <ul class="list-inline">
+                            <p>Project Links</p>
+                            {% if project.project_githublink %}
+                                <li><a href="{{project.project_githublink}}" class="social-icons" target="_blank"><i class="icon-social-github"></i></a></li>
+                            {% else %}
+                            {% endif %}
+                            {% if project.project_link %}
+                                <li><a href="{{project.project_link}}" class="social-icons" target="_blank"><i class="icon-link"></i></a></li>
+                            {% else %}
+                            {% endif %}
+                            {% if project.project_playstorelink %}
+                                <li><a href="{{project.project_playstorelink}}" class="social-icons" target="_blank"><i class="icon-social-google"></i></a></li>
+                            {% else %}
+                            {% endif %}
+                        </ul>
+                        <hr>
+                    </div>
+                {% else %}
+                    <h1>{{project.title_turkish}}</h1>
+                    <div class="category-box" style="margin-bottom: 50px;">
+                        <span>{{ project.category.title_turkish }}</span>
+                    </div>
+                    <div style="max-width: 100%;white-space: pre-wrap; word-wrap: break-word;margin-bottom:50px">
+                        <p>{{project.project_content_turkish}}</p>
+                    </div>
+                    <div>
+                        <ul class="list-inline">
+                            <p>Project Linkleri</p>
+                            {% if project.project_githublink %}
+                                <li><a href="{{project.project_githublink}}" class="social-icons" target="_blank"><i class="icon-social-github"></i></a></li>
+                            {% else %}
+                            {% endif %}
+                            {% if project.project_link %}
+                                <li><a href="{{project.project_link}}" class="social-icons" target="_blank"><i class="icon-link"></i></a></li>
+                            {% else %}
+                            {% endif %}
+                            {% if project.project_playstorelink %}
+                                <li><a href="{{project.project_playstorelink}}" class="social-icons" target="_blank"><i class="icon-social-google"></i></a></li>
+                            {% else %}
+                            {% endif %}
+                        </ul>
+                        <hr>
+                    </div>
+                {% endif %}
+                <div>
+                    <p>
+                        {% for language in languages_used %}
+                            {{ language }}
+                        {% endfor %}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
